@@ -7,6 +7,7 @@ c=$(git rev-parse --short HEAD )
 echo "c is ${c}"
 version=$1.$b.$c
 echo "version is ${version}"
+mkdir -p artifacts
 cp binary.out artifacts/binary.$version.out
 echo $version | tee artifacts/readme.txt
 
