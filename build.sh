@@ -5,7 +5,7 @@ b=$BUILD_BUILDNUMBER
 echo "b is ${b}"
 c=$(git rev-parse --short HEAD )
 echo "c is ${c}"
-version=$r.$b.$c
+version=$1.$b.$c
 echo "version is ${version}"
 cp binary.out binary$version.out
 echo $version | tee readme.txt
