@@ -8,7 +8,9 @@ echo "c is ${c}"
 version=$1.$b.$c
 echo "version is ${version}"
 mkdir -p artifacts
-cp binary.out artifacts/binary.$version.out
+mv binary.out artifacts/binary.$version.out
+cp Dockerfile artifacts/Dockerfile
+cp dockerbuild.sh artifacts/dockerbuild.sh
 echo $version | tee artifacts/readme.txt
 
 #ls -alh
