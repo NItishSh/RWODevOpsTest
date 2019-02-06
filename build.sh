@@ -7,7 +7,7 @@ c=$(git rev-parse --short HEAD )
 echo "c is ${c}"
 version=$1.$b.$c
 echo "version is ${version}"
-cp binary.out binary$version.out
+cp binary.out binary.$version.out
 echo $version | tee readme.txt
 
 ls -alh
