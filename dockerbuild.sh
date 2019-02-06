@@ -5,7 +5,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 cd $DIR
 
 #version=$(basename binary* | cut -d "." -f2,3,4)
-sudo docker build -t csnitsh/devopstest:latest #devopstest:latest -t devopstest:$version .
+sudo docker build -t csnitsh/devopstest:latest . #devopstest:latest -t devopstest:$version .
 
 #sudo docker run -d -p 80:80 csnitsh/devopstest
 
