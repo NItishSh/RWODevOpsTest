@@ -10,7 +10,6 @@ echo "version is ${version}"
 mkdir -p artifacts
 mv binary.out artifacts/binary.$version.out
 cp Dockerfile artifacts/Dockerfile
-cp dockerbuild.sh artifacts/dockerbuild.sh
 echo $version | tee artifacts/readme.txt
 
 #ls -alh
